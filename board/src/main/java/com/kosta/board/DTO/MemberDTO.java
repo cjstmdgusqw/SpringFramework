@@ -1,25 +1,18 @@
 package com.kosta.board.DTO;
 
 public class MemberDTO {
-	private Integer num;
 	private String id;
 	private String password;
 	private String email;
 	private String address;
 	
 	public MemberDTO() {}
-	public MemberDTO(Integer num, String id, String password, String email, String address) {
-		this.num = num;
+	
+	public MemberDTO(String id, String password, String email, String address) {
 		this.id = id;
 		this.password = password;
 		this.email = email;
 		this.address = address;
-	}
-	public Integer getNum() {
-		return num;
-	}
-	public void setNum(Integer num) {
-		this.num = num;
 	}
 	public String getId() {
 		return id;
@@ -45,8 +38,4 @@ public class MemberDTO {
 	public void setAddress(String address) {
 		this.address = address;
 	}
-	
-	
-	
-	
 }
